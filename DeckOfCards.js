@@ -51,11 +51,11 @@ class Player {
     }
 }
 
-const deck2 = new Deck();
-deck2.reset().shuffle();
-console.log(deck2);
+const hand = new Deck();
+hand.reset().shuffle();
+console.log(hand);
 
-let player2 = new Player("Ronnel");
-player2.draw(deck2).draw(deck2);
-console.log(player2);
-console.log(deck2);
+let jose = new Player("Jose");
+jose.draw(hand).draw(hand);
+console.log(jose);
+console.log(hand);
